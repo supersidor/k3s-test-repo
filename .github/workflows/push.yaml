@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker
-        run: docker build --platform linux/amd64 -f ${{ secrets.DOCKERHUB_USERNAME }}/k3s-test.
+        run: docker build --platform linux/arm64 -f ${{ secrets.DOCKERHUB_USERNAME }}/k3s-test.
 
       - name: Push Docker
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/k3s-test:latest

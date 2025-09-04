@@ -13,7 +13,7 @@ spec:
         app: k3s-test
     spec:
       containers:
-        - name: k3s-test
+        - name: main
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 8080

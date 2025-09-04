@@ -6,7 +6,7 @@
 #
 image:
   repository: supersidor/k3-test
-  tag: 0f62f91
+  tag: ""
 #
 #imagePullSecrets: []
 #nameOverride: ""
